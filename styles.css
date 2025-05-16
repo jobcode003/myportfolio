@@ -1,0 +1,382 @@
+body{
+    background-color:rgb(0, 0, 0);
+    font-size: 18px;
+    color: white;
+    margin: auto 3.5rem auto  ;font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+header{
+    margin-top: 2.5rem;
+    z-index: 1;
+  
+}
+.menu,.close{
+    visibility: hidden;
+}
+.nav_bar{
+    float: right;   
+}
+.nav_bar a{ 
+    margin: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: turquoise;
+    transition: 900ms ease;
+}
+.fade-in-section{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    will-change: opacity, transform;
+}
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.nav_bar a:hover{
+    text-decoration: underline;
+    box-shadow: 0px 0px 50px rgb(11, 146, 190) ;
+    background-color: rgb(35, 168, 168);
+    border-radius: 30%;
+    color:black;  
+}
+
+.myname{
+    color: turquoise;
+    font-size: 4em;
+    text-decoration: none;
+}
+.title{
+    text-align: center;
+    color: teal;
+}
+.myname span{
+    color: black;
+    background-color: lightblue;
+    box-shadow: 0px 0px 60px lightblue;
+    border-radius: 10px;
+    
+}
+.section1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+
+     
+}
+.cont{
+    background-image: url(back.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    
+}
+.section1 img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px lightblue;
+   transition: 1s ease;
+
+}
+
+.section1 img:hover{
+    box-shadow: 0px 0px 80px rgb(152, 201, 218);
+}
+
+.proffesion{
+    font-size: 2.4em;
+    color: aqua;
+}
+.f_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hashtag{
+    font-size: 1.3em;
+    border-bottom: solid teal 2px;
+    color: teal;
+}
+ul li{
+    list-style-type: none ;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 7px;
+    margin: 20px;
+    background-color: teal;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 4px 4px rgb(152, 201, 218);
+}
+.section2{
+    display: flex;
+    justify-content: space-evenly;
+
+   
+}
+.about{
+width: 40%;
+border-radius: 50px;
+border-top: 20px solid teal ;
+border-bottom: 20px solid teal;
+text-align: center;
+}
+.call_for{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.about p{
+    color: white;
+    font-size: 1.3em;
+
+}
+.call_for a{
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 1.4em;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    background-color:teal ;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgb(137, 208, 231);
+    text-align: center;
+    position: relative;
+    
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid teal;
+    margin-top: 1rem;
+    border-bottom:  5px solid teal;
+
+}
+
+.projects,.skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    flex-direction: row;
+    gap: 3rem;
+} 
+ .projects{
+    justify-content: space-between;
+ }
+.projects div{
+    background-color: teal;
+    color: white;
+    padding: 3rem;
+    border-radius: 30px;
+    width: 30%;
+    
+}
+.projects div a{
+    text-decoration: none;
+    color: orange;
+    font-size: 1em;
+}
+.projects div a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.skills{
+    align-items: flex-start;
+
+}
+.skills div{
+    padding: 3rem;
+    font-size: 1.2em;
+    width: 30%;
+    color:white;
+    height: 200px;
+    border-radius: 30px;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+footer{
+    text-align: center;
+    background-color: rgba(10, 4, 53, 0.664);
+    padding: 0.1rem;
+    position: sticky;
+    box-shadow: 0px 0px 20px white;
+   
+}
+.linked{
+    background-color: teal;
+    position: absolute;
+    width: 1.2em; 
+}
+.contact a{
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    color: teal;
+    transition: ease 1s;
+}
+.contact a:hover{
+    box-shadow:0px 0px 30px lightblue;
+    color:white;
+    padding: 0.2rem;
+    border-radius: 20px;
+}
+.section4{
+    background-image: url(moon.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+/*styling for phones*/
+@media (max-width:600px){
+    header{
+        position:fixed;
+        background-color:black;
+        height: 100vh;
+        top: 0px;
+        left: -100%;
+        margin-top: 0px;
+        right: 0;
+        width: 100%;
+    }
+    body{
+        margin: 0;
+        font-size: 15px;
+    }
+    .nav_bar{
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+       text-align: center;
+
+    }
+   
+    .nav_bar a:hover{
+        border-radius: 0;
+    }
+    .close{
+        background-color: wheat;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    .menu{
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    .menu,.close{
+        visibility: visible;
+    }
+    .myname{
+        font-size: 3em;
+    }
+    .section1{
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+   
+    .section1 img{
+        box-shadow: 0px 0px 35px lightblue;
+        }
+        .hashtag{
+            font-size: 1em;
+        }
+        .section2{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .about{
+            width: 100%;
+        }
+        
+        .about p{
+            color: white;
+       
+        
+        }
+        .call_for{
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .projects,.skills{
+            gap: 1rem;
+            flex-wrap: wrap;
+           flex-direction: column;
+        
+           align-items: center;
+        }
+        .skills div{
+            padding: 0.3rem;
+            
+            width: 75%;
+            height: auto;
+            
+        }
+      
+        .projects div{
+            padding: 2.5rem;
+            width: 60%;
+        }
+      .call_for a{
+        padding: 5px;
+        font-size: 0.9em;
+        margin: 0;
+        width: 13rem;
+        margin-top:20px;
+      }
+      footer{
+       
+        padding: 0;
+      
+       
+    }
+    .contact a{
+        font-size: 1em;
+        text-align: left;
+        width: 80%;
+    
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+      
+      
+    
+}
