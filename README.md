@@ -1,15 +1,22 @@
-This is my personal portfolio that highlights my key skills, projects and a brief introduction of who i am.
-The portfolio helps me ocupy an online presence that is vital for boosting my proffesionalism and attracting more clients and employers.
+# Personal Portfolio Website
+# Overview
+- This is a personal portfolio website designed to showcase my skills, projects, and background as a computer science student with an interest in software development and applied AI. The portfolio serves as an online professional presence for potential employers, collaborators, and clients.
+The project is actively maintained and updated as my skills and projects evolve.
 
-it's features include:   1.frontend page 
-                         2.navigation bars
-                         3.projects section
-                         4.about me section
-                         5.skills section
-                         6.contact section
-                         
-Technologies used:       HTML,CSS,JavaScript
+# Features
+- Responsive landing (frontend) page
+- Navigation bar for smooth section access
+- Projects section highlighting completed and ongoing work
+- About Me section with background information
+- Skills section outlining technical competencies
+- Contact section for direct communication
 
-Author:  JOB NYARIBARI
-         jobnyaribari808@gmail.com
-This project is continously been updated
+# Technologies Used
+1. HTML
+2. CSS
+3. JavaScript
+
+
+
+# How to access
+ https://nyaribarijob.netlify.app/
