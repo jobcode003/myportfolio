@@ -3,221 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>_nyaribari portfolio</title>
+    <title>Job Nyaribari | ML & AI Engineer</title>
+    <meta name="description" content="Job Nyaribari — Machine Learning Engineer, Computer Vision Specialist, and Full-Stack Developer building AI-powered solutions across healthcare, agriculture, fintech, and safety.">
     <link rel="stylesheet" href="styles.css">
-    
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>     
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
-    
-<header id="header">
-   <img src="icons/close.svg" alt="cl" id="close_btn" class="close">
-    <nav class="nav_bar">
-        <a href="index.html">Home </a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-<a href="#" class="myname">Job <br><span>Nyaribari</span></a>
-<img src="icons/menu.svg" alt="mn" id="menu_bar" class="menu">
 
-<div class="cont">
-
-
-<section class="section1 fade-in-section" id="sect">
-
-
-    <div class="f_section">
-        <p class="proffesion">I am a ...</p>
-            <ul>
-                <li>Web Developer</li>
-                <li>Machine Learning Engineer</li>
-                <li>Computer Vision Engineer</li>
-            </ul>
-       
-        <p class="hashtag" >#Driving Innovation beyond the Peak</p>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        JN<span class="logo-dot">.</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="My Resume.pdf" class="nav-cta" download>Resume</a>
     </div>
-     
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
 
-    <img src="me.jpg" alt="me">
+<!-- Mobile Menu Overlay -->
+<div class="mobile-overlay" id="mobile-overlay"></div>
 
-</section>
-
-<h1 style="color: turquoise" id="incr_opacity" class="opacity">About me</h1>
-<section class="section2 fade-in-section" >
-    
-    <div class="about" id="about">
-        <p>Hello, my name is Job Nyaribari, a passionate student in the field of computer science with  a strong foundation
-            in Web Development, Computer Vision and  Machine Learning.I enjoy leveraging Technology to solve problems in the day to day 
-            life.Whether building a simple website or building a complex Machine Learning model, I approach every problem
-            with curiosity and critical thinking., keeping every detail in mind.I am constantly Learning and currently 
-            shappening my Machine Learning and AI skills as well as exploring the field of Cybersecurity in order to develop quality
-            systems immune to cyber-attacks. I'm open to internships, freelance opportunities, or collaborations where I can grow and contribute 
-            to meaningful work.
-        </p>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-bg">
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-orb orb3"></div>
+        <div class="grid-overlay"></div>
     </div>
-
-    <div class="call_for">
-        <a href="My%20Resume.pdf">Download Resume  </a>
-        <br>
-        
-        <a href="mailto:jobnyaribari808@gmail.com"> Email Me </a>
-    </div>
-    
-</section>
-
-
-
-<section class="section3 fade-in-section" id="skills">
-    <div><h1 class="title">Skills</h1></div>
-    <div class="skills">
-        
-        <div> 
-           <h1> Coding and Programming</h1>
-           <p>I have strong coding and programming skills
-            in technologies like HTML,CSS,Javascript, MySql
-            PHP, Python,Flask and Django. I also have a solid 
-            foundation in topics like Data structures, mathematics
-            and statistics.
-           </p>
-           </div>
-        <div>
-           <h1>Problem solving</h1>
-           <p>
-            Problem solving is what best describes me, I
-            consistently look for solutions to existing problems.
-            This has helped in my ambition to drive Innovation
-             beyond the Peak.
-
-           </p>
-          </div>
-      
-        <div>
-           <h1>soft skills</h1>
-           <p>In general, i am well equiped with skills like 
-            critical thinking,communication skills, creative thinking, team working
-             and leadership.I am also reliable, adaptable and trustworthy.
-           </p>
-           </div>
-
-
-
-       
-    </div>
-</section>
-
-</div>
-
-
-<section class="section4 fade-in-section" id="projects">
-    <h1 class="title">PROJECTS</h1>
-    <div class="projects" >
-
-        <div class="project1">
-            <h1>Personal Portfolio</h1>
-            <p>This is my Personal Portfolio website that
-                showcases my skills and achievements.
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name">Job <span class="gradient-text">Nyaribari</span></h1>
+            <div class="hero-roles">
+                <p>I build</p>
+                <div class="roles-carousel">
+                    <span class="role active">Machine Learning Systems</span>
+                    <span class="role">Computer Vision Apps</span>
+                    <span class="role">AI-Powered Backends</span>
+                    <span class="role">Full-Stack Solutions</span>
+                </div>
+            </div>
+            <p class="hero-tagline">#Driving Innovation Beyond the Peak</p>
+            <p class="hero-desc">
+                CS student & AI developer building production-grade ML systems across healthcare,
+                agriculture, fintech & road safety. 5+ years engineering intelligent solutions that matter.
             </p>
-            <a href="index.html">link to project</a>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">5+</span>
+                    <span class="stat-label">Production Apps</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">500+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">95%</span>
+                    <span class="stat-label">Best Accuracy</span>
+                </div>
+            </div>
         </div>
-
-        <div class="project2">
-            <h1>E-commerce site</h1>
-            <p>A basic E-commerce site to automate shopping, using technologies like HTML,CSS and JS</p>
-            <a href="https://github.com/jobcode003/ecommerce.git">link to project</a>
-        </div>
-
-        <div class="project3">
-            <h1>Hotel Menu Automation System</h1>
-            <p>Built a real world hotel menu automation system that can be adopted
-            in both small scale and large scale restaurants to assist in order taking significantly
-            saving time and enhancing good customer service.</p>
-            <a href="https://github.com/jobcode003/hotelmenu.git">link to project</a>
-        </div>
-
-        <div class="project4">
-            <h1>Authentication System</h1>
-            <p>A basic authentication system with sign up,Log in, reset password, admin panel and user page.</p>
-            <a href="https://github.com/jobcode003/authentication.git">link to project</a>
-        </div>
-
-        <div class="project 5">
-            <h1>Diabetes Prediction Web App</h1>
-            <p>I have built a Diabetes prediction app using python's Flask for backend and
-            where i collected data, processed it and trained a XGboost Machine learning model which
-                predicts if a person is likely to be affected by Diabetes or not
-            </p>
-            <a href="https://github.com/jobcode003/diapred.git">link to project</a>
-        </div>
-
-        <div class="project6">
-            <h1>Crop diesese detector</h1>
-            <p>I collected a lot of images from crops like, Maize,Tomato and Potatoes.I then cleaned and prepared the 
-                data, later i used the data and trained a Computer Vision model to analyse the crop images to identify the 
-                diesese present. I used transfer learning to boost model perfomance and reduce computational resources.
-            </p>
-            <a href="#">link to project</a>
+        <div class="hero-visual">
+            <div class="photo-frame">
+                <img src="me.jpg" alt="Job Nyaribari" class="hero-photo">
+                <div class="photo-ring ring1"></div>
+                <div class="photo-ring ring2"></div>
+            </div>
+            <div class="floating-card card-ml">
+                <i class="devicon-tensorflow-original"></i>
+                <span>TensorFlow</span>
+            </div>
+            <div class="floating-card card-py">
+                <i class="devicon-python-plain"></i>
+                <span>Python Expert</span>
+            </div>
+            <div class="floating-card card-cv">
+                <i class="devicon-opencv-plain"></i>
+                <span>Computer Vision</span>
+            </div>
         </div>
     </div>
 </section>
 
-
-
-
-<section>
-    <div class="contact" id="contact" >
-        <a href="https://www.linkedin.com/in/job-nyaribari-a0b0972b7/"> 
-          Linkedin
-          <img src="icons/linkedin.svg" alt="ln" class="linked">
-        </a>
-        <a href="https://github.com/jobcode003/portfolio.git"> 
-           
-          Github
-          <i class="devicon-github-original"></i></a>
-        <a href="https://x.com/job_nyaribari"> 
-             
-          Twitter 
-          <i class="devicon-twitter-original"></i></a>
-       
-        <a href="mailto:jobnyaribari808@gmail.com">email <img src="icons/email.svg" alt="em" class="linked"></a>
+<!-- About Section -->
+<section class="section about-section fade-in-section" id="about">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Who I Am</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text-block">
+                <p>
+                    I'm <strong>Job Nyaribari</strong>, a Computer Science student and AI/ML engineer passionate about
+                    building intelligent systems that solve real-world problems. From diagnosing crop diseases in remote
+                    farms to detecting driver fatigue at 95% accuracy, I engineer end-to-end AI systems that
+                    reach production.
+                </p>
+                <p>
+                    My expertise spans the full ML lifecycle — data collection, model training, deployment, and
+                    scaling — with a strong focus on computer vision and predictive analytics. I'm currently
+                    deepening my Cybersecurity knowledge to build AI systems that are both intelligent and
+                    resilient to adversarial threats.
+                </p>
+                <p>
+                    I'm open to <strong>internships</strong>, <strong>freelance collaborations</strong>, and
+                    <strong>research partnerships</strong> where I can grow and contribute meaningfully.
+                </p>
+                <div class="about-actions">
+                    <a href="My Resume.pdf" class="btn-primary" download>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download Resume
+                    </a>
+                    <a href="mailto:jobnyaribari808@gmail.com" class="btn-secondary">Email Me</a>
+                </div>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🎯</div>
+                    <h3>Problem First</h3>
+                    <p>Every project starts with a real problem — I build solutions that close the gap between research and impact.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚀</div>
+                    <h3>Production Ready</h3>
+                    <p>I don't just train models. I deploy them — with proper backends, APIs, and scalable infrastructure.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌍</div>
+                    <h3>African Context</h3>
+                    <p>Focused on building AI that works for African farmers, drivers, and healthcare workers.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🔐</div>
+                    <h3>Security Minded</h3>
+                    <p>Currently exploring Cybersecurity to harden AI systems against vulnerabilities and adversarial attacks.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<footer >
-    <p class="cpy">Job Nyaribari | All rights reserved &#169; 2025</p>
+<!-- Skills Section -->
+<section class="section skills-section fade-in-section" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">What I Know</span>
+            <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">
+                    <span class="cat-icon">🐍</span> Languages
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-python-plain"></i>
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+                            <small>Expert · 5+ yrs</small>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-javascript-plain"></i>
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                            <small>Advanced · 3+ yrs</small>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-html5-plain"></i>
+                        <div class="skill-info">
+                            <span>HTML / CSS</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+                            <small>Advanced</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">
+                    <span class="cat-icon">🧠</span> ML / AI
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-tensorflow-original"></i>
+                        <div class="skill-info"><span>TensorFlow / Keras</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-pytorch-original"></i>
+                        <div class="skill-info"><span>PyTorch</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-scikitlearn-plain"></i>
+                        <div class="skill-info"><span>Scikit-learn / XGBoost</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-opencv-plain"></i>
+                        <div class="skill-info"><span>OpenCV · MediaPipe · YOLO</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">
+                    <span class="cat-icon">⚙️</span> Backend & Databases
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-django-plain"></i>
+                        <div class="skill-info"><span>Django / FastAPI / Flask</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-postgresql-plain"></i>
+                        <div class="skill-info"><span>PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-mongodb-plain"></i>
+                        <div class="skill-info"><span>MongoDB</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-mysql-plain"></i>
+                        <div class="skill-info"><span>MySQL</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">
+                    <span class="cat-icon">☁️</span> DevOps & Cloud
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="devicon-docker-plain"></i>
+                        <div class="skill-info"><span>Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-github-original"></i>
+                        <div class="skill-info"><span>GitHub Actions / CI-CD</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                        <div class="skill-info"><span>AWS / GCP / Azure</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-jenkins-plain"></i>
+                        <div class="skill-info"><span>Jenkins</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:62%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section projects-section fade-in-section" id="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">What I've Built</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Production-grade AI systems solving real problems across multiple industries</p>
+        </div>
+        <div class="projects-grid">
+
+            <!-- GuardianDrive AI -->
+            <div class="project-card featured" id="proj-guardiandrive">
+                <div class="project-status-badge production">✅ Production</div>
+                <div class="project-domain-tag">🚗 Road Safety · Computer Vision</div>
+                <h3 class="project-name">GuardianDrive AI</h3>
+                <p class="project-desc">
+                    A real-time driver monitoring system using computer vision to detect drowsiness,
+                    distraction, and unsafe driving behavior — achieving <strong>95% accuracy</strong>.
+                    Uses MediaPipe facial landmark detection and YOLO-based object recognition to
+                    alert drivers before accidents occur.
+                </p>
+                <div class="project-metrics">
+                    <div class="metric"><span class="metric-val">95%</span><span class="metric-label">Detection Accuracy</span></div>
+                    <div class="metric"><span class="metric-val">Real-time</span><span class="metric-label">Processing</span></div>
+                </div>
+                <div class="project-tags">
+                    <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>YOLO</span><span>TensorFlow</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/jobcode003" class="proj-link-primary" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- AgriScan -->
+            <div class="project-card featured" id="proj-agriscan">
+                <div class="project-status-badge production">✅ Production</div>
+                <div class="project-domain-tag">🌾 Agriculture · Full-Stack AI</div>
+                <h3 class="project-name">AgriScan App</h3>
+                <p class="project-desc">
+                    A full-stack AI platform empowering smallholder farmers to diagnose crop diseases
+                    via smartphone camera. Features a Django backend, EfficientNetB0 image gatekeeper,
+                    Cloudinary storage, and a micro-lending data ledger for fintech partnerships.
+                    Deployed on Railway with <strong>500+ active users</strong>.
+                </p>
+                <div class="project-metrics">
+                    <div class="metric"><span class="metric-val">500+</span><span class="metric-label">Active Users</span></div>
+                    <div class="metric"><span class="metric-val">Production</span><span class="metric-label">Deployed</span></div>
+                </div>
+                <div class="project-tags">
+                    <span>Django</span><span>TensorFlow</span><span>PostgreSQL</span><span>Cloudinary</span><span>Railway</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/jobcode003" class="proj-link-primary" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- LeafScanAI -->
+            <div class="project-card" id="proj-leafscan">
+                <div class="project-status-badge active">✅ Active</div>
+                <div class="project-domain-tag">🌿 Agriculture · Computer Vision</div>
+                <h3 class="project-name">LeafScanAI</h3>
+                <p class="project-desc">
+                    A specialized computer vision model for leaf-level disease classification achieving
+                    <strong>92%+ accuracy</strong>. Trained using transfer learning on curated datasets
+                    spanning Maize, Tomato, and Potato crops with multi-class disease detection.
+                </p>
+                <div class="project-metrics">
+                    <div class="metric"><span class="metric-val">92%+</span><span class="metric-label">Classification Accuracy</span></div>
+                    <div class="metric"><span class="metric-val">3+</span><span class="metric-label">Crop Types</span></div>
+                </div>
+                <div class="project-tags">
+                    <span>Python</span><span>TensorFlow</span><span>Transfer Learning</span><span>OpenCV</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/jobcode003" class="proj-link-primary" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- DiaPred -->
+            <div class="project-card" id="proj-diapred">
+                <div class="project-status-badge production">✅ Production</div>
+                <div class="project-domain-tag">🏥 Healthcare · Predictive Analytics</div>
+                <h3 class="project-name">DiaPred</h3>
+                <p class="project-desc">
+                    A diabetes risk prediction web application powered by an XGBoost model trained on
+                    clinical patient data — achieving <strong>78% accuracy</strong>. Features a Flask backend
+                    with a clean user-facing interface for real-time risk assessment.
+                </p>
+                <div class="project-metrics">
+                    <div class="metric"><span class="metric-val">78%</span><span class="metric-label">Model Accuracy</span></div>
+                    <div class="metric"><span class="metric-val">XGBoost</span><span class="metric-label">Algorithm</span></div>
+                </div>
+                <div class="project-tags">
+                    <span>Python</span><span>XGBoost</span><span>Flask</span><span>Scikit-learn</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/jobcode003/diapred.git" class="proj-link-primary" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- ForexAI Terminal -->
+            <div class="project-card" id="proj-forexai">
+                <div class="project-status-badge dev">⚙️ In Development</div>
+                <div class="project-domain-tag">💹 FinTech · Algorithmic Trading</div>
+                <h3 class="project-name">ForexAI Terminal</h3>
+                <p class="project-desc">
+                    An AI-driven Forex trading system currently in active development with
+                    <strong>70%+ backtesting performance</strong>. Combines time-series forecasting,
+                    sentiment analysis, and technical indicators to generate autonomous trading signals.
+                </p>
+                <div class="project-metrics">
+                    <div class="metric"><span class="metric-val">70%+</span><span class="metric-label">Backtesting Win Rate</span></div>
+                    <div class="metric"><span class="metric-val">Active</span><span class="metric-label">Development</span></div>
+                </div>
+                <div class="project-tags">
+                    <span>Python</span><span>PyTorch</span><span>FastAPI</span><span>Time-Series</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/jobcode003" class="proj-link-primary" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section contact-section fade-in-section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Open to internships, freelance work, research collaborations, and interesting conversations.</p>
+        </div>
+        <div class="contact-grid">
+            <a href="mailto:jobnyaribari808@gmail.com" class="contact-card" id="contact-email">
+                <div class="contact-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>jobnyaribari808@gmail.com</p>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+            <a href="https://www.linkedin.com/in/job-nyaribari-a0b0972b7/" class="contact-card" id="contact-linkedin" target="_blank" rel="noopener">
+                <div class="contact-icon linkedin-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-info">
+                    <h3>LinkedIn</h3>
+                    <p>job-nyaribari</p>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+            <a href="https://github.com/jobcode003" class="contact-card" id="contact-github" target="_blank" rel="noopener">
+                <div class="contact-icon github-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="contact-info">
+                    <h3>GitHub</h3>
+                    <p>jobcode003</p>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+            <a href="https://x.com/job_nyaribari" class="contact-card" id="contact-twitter" target="_blank" rel="noopener">
+                <div class="contact-icon twitter-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </div>
+                <div class="contact-info">
+                    <h3>Twitter / X</h3>
+                    <p>@job_nyaribari</p>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <span class="footer-logo">JN<span class="logo-dot">.</span></span>
+            <p class="footer-tagline">#Driving Innovation Beyond the Peak</p>
+            <p class="footer-copy">Job Nyaribari &copy; 2026 · Built with HTML, CSS & JavaScript</p>
+        </div>
+    </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
