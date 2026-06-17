@@ -1,6 +1,4 @@
-/* ============================================================
-   DESIGN SYSTEM — Job Nyaribari Portfolio
-   ============================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
@@ -1104,9 +1102,6 @@ body {
   }
 }
 
-/* ============================================================
-   RESPONSIVE — MOBILE  (max-width: 768px)
-   ============================================================ */
 @media (max-width: 768px) {
   /* Navbar */
   .navbar {
@@ -1128,6 +1123,8 @@ body {
     padding: 5rem 1.5rem 2rem;
     z-index: 1000;
     transition: right var(--transition-med);
+    background-color: #0d1526;
+
   }
 
   .nav-links.open {
