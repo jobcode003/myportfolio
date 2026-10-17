@@ -88,20 +88,23 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// ── Skill bar animation on reveal ───────────────────────────
-const skillFills = document.querySelectorAll('.skill-fill');
-const skillObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.animation = 'fillBar 1.2s ease-out forwards';
-      }
-    });
-  },
-  { threshold: 0.3 }
-);
+// ── Infinite marquees (skills + projects) ───────────────────
+function initMarquee(trackId) {
+  const track = document.getElementById(trackId);
+  if (!track) return;
 
-skillFills.forEach(fill => skillObserver.observe(fill));
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  track.innerHTML += track.innerHTML;
+  track.classList.add('is-ready');
+
+  track.addEventListener('mouseenter', () => track.classList.add('is-paused'));
+  track.addEventListener('mouseleave', () => track.classList.remove('is-paused'));
+}
+
+initMarquee('skills-track');
+initMarquee('projects-track');
 
 // ── Smooth scroll for anchor links ──────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
